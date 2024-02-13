@@ -1,3 +1,3 @@
 Demo website.
 
-Currently using Bootstrap and basic statiic HTML
+Currently using Bootstrap and basic static HTML
