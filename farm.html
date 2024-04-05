@@ -7,7 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
 </head>
-<header>
+
+<body>
+  <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" id="head_tag" href="index.html">
@@ -41,57 +43,77 @@
         </div>
     </nav>
 </header>
+<main>
 
-<body>
-<!-- Carousel -->
-    <div id="farmCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1>Example headline.</h1>
-                        <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                        <h1>One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+<!-- Hero -->
+<div class="px-4 pt-5 my-5 text-center">
+  <h1 class="display-4 fw-bold text-body-emphasis">Welcome to Mengelmoes Boerdery</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Mengelmoes Boerdery Pty (Ltd) is our startup farm, where we're passionate about cultivating premium-grade Moringa, Dragon Fruit, and Pomegranate. With a focus on sustainable practices 
+      and quality assurance, we're dedicated to delivering fresh, nutrient-rich produce. Our produce will supply our sister companies’ community projects, as well as both local and international markets, fostering healthier lifestyles worldwide.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <a href="contact.html" class="btn btn-outline-success btn-lg">Get in touch</a>
+    </div>
   </div>
+  <div class="overflow-hidden" style="max-height: 30vh;">
+    <div class="container px-5">
+      <img src="Assets/mmb_1920.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Farm lands" width="700" height="500" loading="lazy">
+    </div>
+  </div>
+</div>
 
+<!-- album -->
+
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="Assets/morsaps.JPG" class="img-thumbnail" alt="moringa seedlings" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Moringa</h5>
+            <p class="card-text">Our moringa nursery currently has 20 000 seedlings to be planted on 5 ha.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="Assets/pomtree.jpg" class="img-thumbnail" alt="pomegranate_trees" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Pomegranate</h5>
+            <p class="card-text">1950 Mature pomegranate trees currently planted on 2 ha.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="Assets/dragonfruit_sapling.png" class="img-thumbnail" alt="pomegranate_trees" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Dragon Fruit</h5>
+            <p class="card-text">1500 saplings from our nursery will be planted on 1 ha.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- features -->
+<div class="container mt-3">
+<div class="card mb-3">
+  <img src="Assets/mmb2.JPG" class="card-img-top" alt="farm landscape">
+  <div class="card-body">
+    <h5 class="card-title">Mengelmoes Boerdery</h5>
+    <p class="card-text">Situated on the border the lovely Karoo-town of Calitzdorp.</p>
+  </div>
+</div>
+<div class="container p-5 d-flex justify-content-center">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2593.3231075021035!2d21.662211019176013!3d-33.553500095736375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDMzJzE0LjEiUyAyMcKwMzknNTEuOCJF!5e1!3m2!1sen!2sza!4v1712316157515!5m2!1sen!2sza" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+</main>
 <!-- footer -->
     <div class="container">
         <footer class="py-3 my-4">
